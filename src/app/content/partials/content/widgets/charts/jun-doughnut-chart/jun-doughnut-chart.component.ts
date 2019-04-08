@@ -29,10 +29,11 @@ export class JunDoughnutChartComponent implements OnInit {
 	title: string = 'Default';
 
 	options: any = {
-		cutoutPercentage: 80
+		cutoutPercentage: 80,
+		legend: { position: 'right' }
 	};
 	// Doughnut
-	public doughnutChartLabels: string[] = ['Rejected', 'Business Events', 'Others'];
+	public doughnutChartLabels: string[] = ['37% Rejected', '47% Business Events', '19% Others'];
 	public doughnutChartColors: any[] =[
 		{ 
 		  backgroundColor:["#F8B44B", "#726ABD", "#46BCA0"] 
