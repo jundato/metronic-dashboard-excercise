@@ -1,0 +1,48 @@
+<div class="m-portlet">
+	<div class="m-portlet__head">
+		<div class="m-portlet__head-caption" >
+			<div class="m-portlet__head-title">
+				<h3 class="m-portlet__head-text">
+					{{ title }}
+				</h3>
+			</div>
+		</div>
+		<div class="m-portlet__head-tools">
+				<mat-form-field>
+						<input matInput [matDatepicker]="dp" [formControl]="date">
+						<mat-datepicker-toggle matSuffix [for]="dp"></mat-datepicker-toggle>
+						<mat-datepicker #dp></mat-datepicker>
+					  </mat-form-field>
+		</div>
+	</div>
+	<div class="m-portlet__body m-portlet__body--no-padding">
+		<div class="row no-margin">
+			<div class="col m--align-right m--padding-top-25">
+				<span class="m-badge m-badge--success m-badge--wide">
+					Today
+				</span>
+				<span class="m--padding-left-20">Week</span>
+				<span class="m--padding-left-20">Month</span>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+					<h3 class="kt-widget14__title doughnut-text">12</h3>
+				<div class="m-widget14">
+					<canvas
+						#doughnutcanvas
+						baseChart
+						[data]="doughnutChartData"
+						[labels]="doughnutChartLabels"
+						[chartType]="doughnutChartType"
+						[colors]="doughnutChartColors"
+						[options]="options"></canvas>
+				</div>
+
+			</div>
+		</div>
+		
+	</div>
+</div>
+	
+
