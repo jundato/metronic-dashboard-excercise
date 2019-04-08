@@ -1,5 +1,5 @@
 Using
 
-Angular 7+
-bootstrap angular material
-metronic theme
+- Angular 7+
+- bootstrap angular material
+- metronic theme
