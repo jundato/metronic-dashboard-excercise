@@ -5,6 +5,7 @@ import {DateAdapter, MAT_DATE_FORMATS, MAT_DATE_LOCALE} from '@angular/material/
 
 import * as _moment from 'moment';
 import {default as _rollupMoment} from 'moment';
+import { NgbDate } from '@ng-bootstrap/ng-bootstrap';
 const moment = _rollupMoment || _moment;
 
 @Component({
@@ -39,8 +40,10 @@ export class JunDoughnutChartComponent implements OnInit {
 	public doughnutChartData: number[] = [37, 47, 19];
 	public doughnutChartType: string = 'doughnut';
 
-	date = new FormControl(moment(new Date()));
-	constructor () { }
+	date = new NgbDate(2019, 3, 27);
+	constructor () { 
+		
+	}
 
 	ngOnInit(){
 	
